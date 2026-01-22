@@ -2,10 +2,10 @@ schema_version: 1
 
 context:
   name: pygama
-  version: "2.3.1"
+  version: 2.3.2
   # pylegendmeta is Python 3.10 to get around a selector issue,
   # so use Python 3.10 even though source is 3.9+.
-  python_min: "3.10"
+  python_min: '3.10'
 
 package:
   name: ${{ name|lower }}
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pygama-${{ version }}.tar.gz
-  sha256: ab707e7a0907516696346e538e566f21b8d32596f737ac7ff2b4f928590ab559
+  sha256: 3294df9634e8733cc46335813d79227a26512fc18cfe6a75b723ad2e487a97ff
 
 build:
   number: 0
@@ -34,13 +34,13 @@ requirements:
     - hist
     - colorlog
     - dbetto
-    - dspeed >=1.7
+    - dspeed >=2.0
     - h5py >=3.2
     - iminuit
-    - legend-pydataobj >=1.14
+    - legend-pydataobj >=1.16
     - pylegendmeta >=0.9
     - matplotlib-base
-    - numba !=0.53.*,!=0.54.*,!=0.57
+    - numba !=0.53,!=0.54.*,!=0.57
     - numpy >=1.21
     - pandas >=1.4.4
     - pytables
@@ -49,7 +49,6 @@ requirements:
     - scikit-learn
     - scipy >=1.0.1
     - tqdm >=4.66
-
 tests:
   - python:
       imports:
