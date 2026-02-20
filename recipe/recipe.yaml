@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pygama
-  version: "2.3.3"
+  version: "2.3.4"
   # pylegendmeta is Python 3.10 to get around a selector issue,
   # so use Python 3.10 even though source is 3.9+.
   python_min: '3.10'
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pygama-${{ version }}.tar.gz
-  sha256: cfa939cf1ae31e20ce997be2c42feac4294056ddb2c81cf7c08b7c9c32c1bf3f
+  sha256: b1868ff322a18885ef4093e0a9e0c4f1f620f2409db22a4d6955e2c9353f0748
 
 build:
   number: 0
