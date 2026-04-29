@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pygama
-  version: "2.3.7"
+  version: 2.3.8
   # pylegendmeta is Python 3.10 to get around a selector issue,
   # so use Python 3.10 even though source is 3.9+.
   python_min: '3.10'
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pygama-${{ version }}.tar.gz
-  sha256: b4b3fde9c3e438fa6c891f23af5cb8a91f4fd38dd6cf17f5547ce902b5490754
+  sha256: f91e0619fdbf9f2954ef5fe98137b587918cd9d1cf8cebc27a95d967c2805948
 
 build:
   number: 0
@@ -49,6 +49,7 @@ requirements:
     - scikit-learn
     - scipy >=1.0.1
     - tqdm >=4.66
+    - numexpr
 tests:
   - python:
       imports:
