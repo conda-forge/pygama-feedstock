@@ -3,9 +3,7 @@ schema_version: 1
 context:
   name: pygama
   version: 2.3.10
-  # pylegendmeta is Python 3.10 to get around a selector issue,
-  # so use Python 3.10 even though source is 3.9+.
-  python_min: '3.10'
+  python_min: '3.11'
 
 package:
   name: ${{ name|lower }}
