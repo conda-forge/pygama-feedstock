@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pygama
-  version: 2.3.10
+  version: "2.4.0"
   python_min: '3.11'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pygama-${{ version }}.tar.gz
-  sha256: f495c7d561030b3f48c5de07a1a954e03eb6f539bb9437bb53693a7b9560ad4e
+  sha256: 626e664655bcd65c9a4faf0a66af7edc5548561343e21dba8699605b03a14dfd
 
 build:
   number: 0
