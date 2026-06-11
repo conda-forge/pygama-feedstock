@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pygama
-  version: "2.4.1"
+  version: 2.5.0
   python_min: '3.11'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pygama-${{ version }}.tar.gz
-  sha256: ef41bd22d14670079e0a0612e2b06fb58623459a7a88c2d712d450763a566c1b
+  sha256: 312199fa4d2fddde8d6f52ae09cfc37f69b7f4584410c397edf60ac0443eb103
 
 build:
   number: 0
@@ -49,6 +49,7 @@ requirements:
     - tqdm >=4.66
     - numexpr
     - legend-lh5io >=0.2.3
+    - rich
 tests:
   - python:
       imports:
