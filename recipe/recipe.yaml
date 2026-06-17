@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pygama
-  version: "2.5.1"
+  version: 2.6.0
   python_min: '3.11'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pygama-${{ version }}.tar.gz
-  sha256: 92024239a3ff1f5484950d16f1f675d7a5b6bda61e021c8010b870fdedbd9c84
+  sha256: d68cbb2a2f3323bba922b0aeacb60038c8f7e96afae88f4397e8e2b3e76b7f37
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - setuptools-scm >=7
   run:
     - python >=${{ python_min }}
-    - hist
+    - hist >=2.8.0
     - colorlog
     - dbetto
     - dspeed >=2.0
@@ -50,6 +50,8 @@ requirements:
     - numexpr
     - legend-lh5io >=0.2.3
     - rich
+    - hepstats
+    - awkward
 tests:
   - python:
       imports:
